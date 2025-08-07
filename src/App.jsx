@@ -1,27 +1,27 @@
-// import { useState } from 'react'
-import './App.css'
-import AboutUs from './components/AboutUs'
-import DiscoverSection from './components/DiscoverSection'
-import HighlightsStrip from './components/HighlightsStrip'
-import Header from './components/MainHeader'
-import Navbar from './components/Navbar'
-import OurExpertise from './components/OurExpertise'
-import ProcessSection from './components/ProcessSection'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import AboutusPage from "./pages/AboutusPage";
+import ServicesPage from "./pages/ServicesPage";
+import PortfolioPage from "./pages/PortfolioPage";
+import BlogPage from "./pages/BlogPage";
+import ContactPage from "./pages/ContactPage";
+import Navbar from "./components/Navbar";
 
 function App() {
-  // const [count, setCount] = useState(0)
-
   return (
-    <>
-      <Navbar/>
-      <Header/>
-      <HighlightsStrip/>
-      <AboutUs/>
-      <ProcessSection/>
-      <DiscoverSection/>
-      <OurExpertise/>
-    </>
-  )
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutusPage />} />
+        <Route path="/services" element={<ServicesPage />} />
+        <Route path="/portfolio" element={<PortfolioPage />} />
+        <Route path="/blog" element={<BlogPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
+
