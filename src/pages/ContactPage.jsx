@@ -1,20 +1,18 @@
 import React from "react";
+import Contact from "../components/Contact";
+import PageHeader from "../components/PageHeader";
 
 function ContactPage() {
-  return (
-    <div className="contact-page">
-      <h1>Contact Us</h1>
-      <p>
-        We would love to hear from you! Whether you have a question, feedback, or just want to say hello, feel free to reach out.
-      </p>
-      <p>
-        You can contact us via email at <a href="mailto:pluxnet">pluxnet</a>    
-        or fill out the contact form on our website. Our team is here to assist you with any inquiries you may have.
-      </p>
-        <p>
-            Thank you for your interest in PulxeNet. We look forward to connecting with you!
-        </p>
-    </div>
+    const headerProps = {
+        title: "Contact",
+        src: "/images/2aef1e7870e658e37eeca082a17a4f3ee6aadc30.jpg", // Replace with actual image URL
+        alt: "About Us Header Image"
+    };
+    return (
+        <>
+          <PageHeader headerProps={headerProps}/>
+          <Contact/>
+        </>
     );
-}
+    }
 export default ContactPage;

@@ -6,6 +6,7 @@ import PortfolioPage from "./pages/PortfolioPage";
 import BlogPage from "./pages/BlogPage";
 import ContactPage from "./pages/ContactPage";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/contact" element={<ContactPage />} />
       </Routes>
+      <Footer/>
     </Router>
   );
 }

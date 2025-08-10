@@ -1,19 +1,20 @@
 import React from "react";
+import PageHeader from "../components/PageHeader";
+import AboutUs from "../components/AboutUs";
+import TeamSection from "../components/TeamSection";
 
 function AboutusPage() {
+    const headerProps = {
+        title: "About Us",
+        src: "/images/d5c4680d34ba55cff683085da2cf0786a3885aaa.jpg", // Replace with actual image URL
+        alt: "About Us Header Image"
+    };
     return (
-        <div className="aboutus-page">
-        <h1>About Us</h1>
-        <p>
-            Welcome to PulxeNet, where we specialize in delivering innovative
-            solutions tailored to your needs. Our team is dedicated to excellence,
-            ensuring that every project is a success.
-        </p>
-        <p>
-            With a proven track record of over 100 projects delivered on time, we
-            pride ourselves on our commitment to quality and client satisfaction.
-        </p>
-        </div>
+        <>
+          <PageHeader headerProps={headerProps}/>
+          <AboutUs/>
+          <TeamSection/>
+        </>
     );
     }
 export default AboutusPage;
