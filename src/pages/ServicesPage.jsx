@@ -1,8 +1,8 @@
 import React from "react";
 import PageHeader from "../components/PageHeader";
-import ProcessSection from "../components/ProcessSection";
 import CourseSection from "../components/CourseSection";
 import DiscoverSection from "../components/DiscoverSection";
+import OurExpertise from "../components/OurExpertise";
 
 function ServicesPage() {
     const headerProps = {
@@ -10,7 +10,7 @@ function ServicesPage() {
         src: "/images/6fecb51da0f4ec53ab18597e7ccc0253e34d5b4a.jpg", // Replace with actual image URL
         alt: "Services Header Image"
     };
-    const processSteps = [
+    const expertiseList = [
   {
     number: "01",
     title: "IT Network Solutions",
@@ -96,13 +96,118 @@ function ServicesPage() {
       "Providing continuous monitoring, updates, and optimizations to keep systems secure, efficient, and up-to-date.",
   }
 ];
-
+const courses = [
+    {
+      instructor: "Kashif Abbas",
+      image: "/images/0246e10e8c8cf972814eb82cd5b63b25db82ef35.png",
+      instructorImg: "instructor1.jpg",
+      title: "Professional IT training in CCNA",
+      description:
+        "Networking fundamentals and boost your IT career with expert-led CCNA training.",
+      duration: "10 weeks",
+      price: "$24.92",
+      oldPrice: "$32.90",
+      rating: "⭐⭐⭐⭐⭐",
+      reviews: "(1.2K)",
+    },
+    {
+      instructor: "Kashif Abbas",
+      image: "/images/4a3a2f2b3d9e3a652bc9d81ed2e4d36d1148ad07.png",
+      instructorImg: "instructor2.jpg",
+      title: "Mastering Cloud Computing",
+      description:
+        "Learn cloud fundamentals and advanced deployment techniques with real projects.",
+      duration: "8 weeks",
+      price: "$29.99",
+      oldPrice: "$39.99",
+      rating: "⭐⭐⭐⭐",
+      reviews: "(980)",
+    },
+    {
+      instructor: "Kashif Abbas",
+      image: "/images/4bf805350a1399465083305b7f84622dc7c592f1.png",
+      instructorImg: "instructor3.jpg",
+      title: "Cybersecurity Essentials",
+      description:
+        "Understand and protect against modern cyber threats using top tools.",
+      duration: "12 weeks",
+      price: "$34.50",
+      oldPrice: "$44.00",
+      rating: "⭐⭐⭐⭐⭐",
+      reviews: "(2.1K)",
+    },
+    {
+      instructor: "Kashif Abbas",
+      image: "/images/a2ee0bbbec5cc0640125990426dd8a9bbf8a9255.png",
+      instructorImg: "instructor4.jpg",
+      title: "Full-Stack DevOps",
+      description:
+        "Build, deploy, and automate with the latest DevOps tools and pipelines.",
+      duration: "9 weeks",
+      price: "$27.45",
+      oldPrice: "$36.00",
+      rating: "⭐⭐⭐⭐",
+      reviews: "(1.5K)",
+    },
+     {
+      instructor: "Kashif Abbas",
+      image: "/images/355e8fc8a0148f6b0946c7f6443fd0688de928bb.png",
+      instructorImg: "instructor1.jpg",
+      title: "Professional IT training in CCNA",
+      description:
+        "Networking fundamentals and boost your IT career with expert-led CCNA training.",
+      duration: "10 weeks",
+      price: "$24.92",
+      oldPrice: "$32.90",
+      rating: "⭐⭐⭐⭐⭐",
+      reviews: "(1.2K)",
+    },
+    {
+      instructor: "Kashif Abbas",
+      image: "/images/63dd95a7e2370fe83c0d3951d3671782c136cec0.png",
+      instructorImg: "instructor2.jpg",
+      title: "Mastering Cloud Computing",
+      description:
+        "Learn cloud fundamentals and advanced deployment techniques with real projects.",
+      duration: "8 weeks",
+      price: "$29.99",
+      oldPrice: "$39.99",
+      rating: "⭐⭐⭐⭐",
+      reviews: "(980)",
+    },
+    {
+      instructor: "Kashif Abbas",
+      image: "/images/143d84301f6365507aa63b5a4821fda43917e9ae.png",
+      instructorImg: "instructor3.jpg",
+      title: "Cybersecurity Essentials",
+      description:
+        "Understand and protect against modern cyber threats using top tools.",
+      duration: "12 weeks",
+      price: "$34.50",
+      oldPrice: "$44.00",
+      rating: "⭐⭐⭐⭐⭐",
+      reviews: "(2.1K)",
+    },
+    {
+      instructor: "Kashif Abbas",
+      image: "/images/1aa493bdbb8c72f66d1291c16bf9d9c0246087da.png",
+      instructorImg: "instructor4.jpg",
+      title: "Full-Stack DevOps",
+      description:
+        "Build, deploy, and automate with the latest DevOps tools and pipelines.",
+      duration: "9 weeks",
+      price: "$27.45",
+      oldPrice: "$36.00",
+      rating: "⭐⭐⭐⭐",
+      reviews: "(1.5K)",
+    },
+  ];
     return (
         <>
           <PageHeader headerProps={headerProps}/>
           <DiscoverSection />
-          <ProcessSection processSteps={processSteps}/>
-          <CourseSection />
+          <OurExpertise expertiseList={expertiseList} />
+          <CourseSection courses={courses}/>
         </>
     );
     }

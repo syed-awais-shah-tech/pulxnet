@@ -1,0 +1,150 @@
+.testimonials-section {
+  background: #fff;
+  padding: 4rem 1rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.testimonials-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.testimonials-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.testimonials-subtitle {
+  font-size: 1rem;
+  color: #0e927d;
+  font-weight: 500;
+}
+
+.testimonials-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #022b30;
+}
+
+/* Card Wrapper */
+.testimonial-card-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/* Testimonial Card */
+.testimonial-card {
+  flex: 1;
+  background: #0e927d;
+  color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto;
+  opacity: 0;
+  transform: scale(0.95);
+}
+
+.testimonial-card.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.testimonial-card.inactive {
+  display: none;
+}
+
+/* Content */
+.testimonial-content {
+  position: relative;
+}
+
+.quote-icon {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.right-quote {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.testimonial-content p {
+  font-size: 1rem;
+  margin: 1rem 0 2rem;
+  line-height: 1.5;
+}
+
+/* Footer */
+.testimonial-footer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.testimonial-footer img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.testimonial-footer h4 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.testimonial-footer p {
+  margin: 0;
+  font-size: 0.85rem;
+}
+
+/* Navigation Buttons */
+.nav-btn {
+  background: #0e927d;
+  color: #fff;
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-btn:hover {
+  background: #066b5a;
+}
+
+.prev-btn {
+  margin-right: 10px;
+}
+
+.next-btn {
+  margin-left: 10px;
+}
+
+/* Dots */
+.dots-container {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background: #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.active-dot {
+  background: #0e927d;
+}
